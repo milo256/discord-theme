@@ -1,0 +1,214 @@
+
+/*
+@import url("https://catppuccin.github.io/discord/dist/catppuccin-macchiato.theme.css");
+*/
+
+/* CONFIG */
+:root {
+    --server-icon-scale: 1.1;
+    --font-sans-serif: "Atkinson Hyperlegible";
+    --font-mono: "Atkinson Hyperlegible Mono";
+}
+
+
+/* TOP BAR STUFF */
+/* delete the top bar */
+:root { --custom-app-top-bar-height: 0; }
+
+/* move the inbox and help buttons which were in
+ * the top bar before */
+.visual-refresh .trailing_c38106 {
+    background-color: var(--background-secondary);
+    border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+    border: 1px solid var(--input-border);
+    border-top: none;
+    position: relative;
+    gap: var(--space-4);
+    padding: 2px 4px 0 4px;
+    z-index: 101;
+    transform: translate(4px, 65px);
+}
+/* shrink the unread messages bar to accommodate the inbox
+ * and help buttons */
+.visual-refresh .barBase__0f481 {
+    right: calc(var(--space-16) + 76px);
+}
+
+
+/* FONTS */
+:root,:root:lang(bg),:root:lang(el),:root:lang(ru),:root:lang(uk) {
+    --font-primary: var(--font-sans-serif);
+    --font-headline: var(--font-sans-serif);
+    --font-clan-body: var(--font-sans-serif);
+    --font-clan-signature:  var(--font-sans-serif);
+    --font-display: var(--font-sans-serif);
+    --font-code: var(--font-mono);
+}
+
+
+/* MESSAGE BOX STUFF */
+/* shrink the message box */
+:root { --custom-channel-textarea-text-area-height: 40px; }
+.channelTextArea_f75fb0 .attachButton__0923f {
+    padding-left: var(--space-xs) !important;
+}
+/* make typing indicator display above message box*/
+.visual-refresh .form_f75fb0 {
+    background-color: inherit;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.channelBottomBarArea_f75fb0 > * {
+    margin-bottom: var(--space-xs);
+}
+/* restyle typing indicator */
+.typing_b88801 {
+    position: relative;
+    left: 0 !important;
+    margin-top: -8px;
+    bottom: -4px;
+    padding-left: var(--space-16);
+    padding-right: var(--space-8);
+    padding-bottom: 6px;
+    border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+    border: 1px solid var(--input-border);
+    border-bottom: none;
+}
+/* add a border to the message box */
+.channelTextArea_f75fb0 {
+    border-color: var(--input-border);
+}
+/* decrease the space between the latest message and
+ * the message box */
+.scrollerSpacer__36d07 { height: 16px !important; }
+
+
+/* USER PANEL */
+/* restyle user panel */
+.container__2637a {
+    padding-bottom: 0px;
+}
+.visual-refresh .panels_c48ade {
+    border: none;
+    border-top: 1px solid var(--input-border);
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    border-radius: 0;
+}
+/* remove gap between user panel and stuff above it */
+.wrapper_ef3116, .scroller__99e7c {
+    margin-bottom: var(--custom-app-panels-height) !important;
+}
+.scroller__629e4 {
+    margin-bottom: 0px !important;
+}
+
+
+/* MISC */
+/* resize server list icons */
+:root {
+    --custom-guild-list-width: calc(48px * var(--server-icon-scale) + 6px);
+}
+.stack_dbd263 {
+    gap: calc(48px * var(--server-icon-scale) - 42px) !important;
+}
+.wrapper_cc5dd2 {
+    transform: scale(var(--server-icon-scale));
+}
+/* add spacing above the discord button in the top left */
+.visual-refresh .scroller_ef3116 {
+    padding-top: var(--space-sm);
+}
+/* remove rounded corner and top border of the main content area */
+.sidebarList_c48ade {
+    border-top-left-radius: 0px !important;
+    border-top: none !important;
+}
+.chat_f75fb0 {
+    border-top: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* OLD VERSION */
+
+
+@import url("https://catppuccin.github.io/discord/dist/catppuccin-macchiato.theme.css");
+
+/* make the fonts good */
+:root,:root:lang(bg),:root:lang(el),:root:lang(ru),:root:lang(uk) {
+    --font-primary: "Atkinson Hyperlegible";
+    --font-headline: "Atkinson Hyperlegible";
+    --font-clan-body: "Atkinson Hyperlegible";
+    --font-clan-signature:  "Atkinson Hyperlegible";
+    --font-display: "Atkinson Hyperlegible";
+    --font-code: "Atkinson Hyperlegible Mono";
+}
+
+/* shrink reply bar */
+.closeButton_e876a8 {
+    padding-bottom: 6px;
+    padding-top: 6px;
+}
+
+/* restyle reply bar */
+.replyBar__841c8 {
+    border-radius: 0;
+    border-bottom: 2px solid var(--background-primary);
+}
+
+/* weird shit going on here, the reply bar is inside of this 
+ * and it looks wierd */
+.clipContainer__841c8 {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+/* remove padding to left and right of chat box */
+.form_f75fb0 {
+    /* margin-top: 0px; */
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* delete the spacing below the chat box */
+.channelBottomBarArea_f75fb0 > * {
+    margin-bottom: 0;
+}
+
+/* delete chat box rounded corners */
+.scrollableContainer__74017 {
+    border-radius: 0;
+}
+
+/* just fucking get rid of the activities launcher */
+.channelAppLauncher_e6e74f {
+    display: none;
+}
+
+/* decrease the space between the latest message and
+ * the chatbox */
+.scrollerSpacer__36d07 {
+    height: 16px;
+}
+
+/* move typing message above chat box */
+.form_f75fb0 {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.typing_b88801 {
+    position: relative;
+    /* color: var(--channels-default); */
+}
+
+
