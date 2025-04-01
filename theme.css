@@ -1,14 +1,19 @@
+/*
+ * discord css to fix dumb stuff they changed in the march 2025 ui update
+ * by milo256
+ */
 
 /*
-@import url("https://catppuccin.github.io/discord/dist/catppuccin-macchiato.theme.css");
-*/
-
-/* CONFIG */
+ * CONFIG
+ */
 :root {
     --server-icon-scale: 1.1;
     --font-sans-serif: "Atkinson Hyperlegible";
     --font-mono: "Atkinson Hyperlegible Mono";
 }
+/* =============================================================================
+ */
+
 
 
 /* TOP BAR STUFF */
@@ -128,87 +133,3 @@
 .chat_f75fb0 {
     border-top: none !important;
 }
-
-
-
-
-
-
-
-
-
-
-
-/* OLD VERSION */
-
-
-@import url("https://catppuccin.github.io/discord/dist/catppuccin-macchiato.theme.css");
-
-/* make the fonts good */
-:root,:root:lang(bg),:root:lang(el),:root:lang(ru),:root:lang(uk) {
-    --font-primary: "Atkinson Hyperlegible";
-    --font-headline: "Atkinson Hyperlegible";
-    --font-clan-body: "Atkinson Hyperlegible";
-    --font-clan-signature:  "Atkinson Hyperlegible";
-    --font-display: "Atkinson Hyperlegible";
-    --font-code: "Atkinson Hyperlegible Mono";
-}
-
-/* shrink reply bar */
-.closeButton_e876a8 {
-    padding-bottom: 6px;
-    padding-top: 6px;
-}
-
-/* restyle reply bar */
-.replyBar__841c8 {
-    border-radius: 0;
-    border-bottom: 2px solid var(--background-primary);
-}
-
-/* weird shit going on here, the reply bar is inside of this 
- * and it looks wierd */
-.clipContainer__841c8 {
-    margin-top: 0px;
-    padding-top: 0px;
-}
-
-/* remove padding to left and right of chat box */
-.form_f75fb0 {
-    /* margin-top: 0px; */
-    padding-left: 0;
-    padding-right: 0;
-}
-
-/* delete the spacing below the chat box */
-.channelBottomBarArea_f75fb0 > * {
-    margin-bottom: 0;
-}
-
-/* delete chat box rounded corners */
-.scrollableContainer__74017 {
-    border-radius: 0;
-}
-
-/* just fucking get rid of the activities launcher */
-.channelAppLauncher_e6e74f {
-    display: none;
-}
-
-/* decrease the space between the latest message and
- * the chatbox */
-.scrollerSpacer__36d07 {
-    height: 16px;
-}
-
-/* move typing message above chat box */
-.form_f75fb0 {
-    display: flex;
-    flex-direction: column-reverse;
-}
-.typing_b88801 {
-    position: relative;
-    /* color: var(--channels-default); */
-}
-
-
