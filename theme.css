@@ -8,8 +8,6 @@
  */
 :root {
     --server-icon-scale: 1.1;
-    --font-sans-serif: "Atkinson Hyperlegible";
-    --font-mono: "Atkinson Hyperlegible Mono";
 }
 /* =============================================================================
  */
@@ -36,17 +34,6 @@
  * and help buttons */
 .visual-refresh .barBase__0f481 {
     right: calc(var(--space-16) + 76px);
-}
-
-
-/* FONTS */
-:root,:root:lang(bg),:root:lang(el),:root:lang(ru),:root:lang(uk) {
-    --font-primary: var(--font-sans-serif);
-    --font-headline: var(--font-sans-serif);
-    --font-clan-body: var(--font-sans-serif);
-    --font-clan-signature:  var(--font-sans-serif);
-    --font-display: var(--font-sans-serif);
-    --font-code: var(--font-mono);
 }
 
 
