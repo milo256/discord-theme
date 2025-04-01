@@ -3,15 +3,6 @@
  * by milo256
  */
 
-/*
- * CONFIG
- */
-:root {
-    --server-icon-scale: 1.1;
-}
-/* =============================================================================
- */
-
 
 /* TOP BAR STUFF */
 /* delete the top bar */
@@ -103,25 +94,11 @@
 /* MISC */
 /* resize server list icons */
 :root {
-    --custom-guild-list-width: calc(48px * var(--server-icon-scale) + 6px);
+    --custom-guild-list-width: 55px;
 }
 .expandedFolderBackground__48112 {
     left: 4px !important;
     width: calc(100% - 8px);
-}
-.stack_dbd263 {
-    gap: calc(48px * var(--server-icon-scale) - 42px) !important;
-}
-.wrapper_cc5dd2 {
-    transform: scale(var(--server-icon-scale));
-}
-.wrapper__48112 .stack_dbd263 {
-    padding-top: calc(48px * var(--server-icon-scale) - 48px) !important;
-    padding-bottom: calc(80px * var(--server-icon-scale) - 80px) !important;
-    transform: scale(var(--server-icon-scale));
-}
-.wrapper__48112 .stack_dbd263 .wrapper_cc5dd2 {
-    transform: scale(1);
 }
 /* add spacing above the discord button in the top left */
 .visual-refresh .scroller_ef3116 {
