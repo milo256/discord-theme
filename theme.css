@@ -15,7 +15,6 @@
  */
 
 
-
 /* TOP BAR STUFF */
 /* delete the top bar */
 :root { --custom-app-top-bar-height: 0; }
@@ -26,12 +25,12 @@
     background-color: var(--background-secondary);
     border-radius: 0 0 var(--radius-sm) var(--radius-sm);
     border: 1px solid var(--input-border);
-    border-top: none;
+    border-top-color: var(--border-subtle);
     position: relative;
     gap: var(--space-4);
     padding: 2px 4px 0 4px;
-    z-index: 101;
-    transform: translate(4px, 65px);
+    z-index: 105;
+    transform: translate(4px, 64px);
 }
 /* shrink the unread messages bar to accommodate the inbox
  * and help buttons */
@@ -55,7 +54,11 @@
 /* shrink the message box */
 :root { --custom-channel-textarea-text-area-height: 40px; }
 .channelTextArea_f75fb0 .attachButton__0923f {
-    padding-left: var(--space-xs) !important;
+    padding-left: 8px !important;
+}
+.buttons__74017 {
+    margin-right: -6px !important;
+    gap: 2px !important;
 }
 /* make typing indicator display above message box*/
 .visual-refresh .form_f75fb0 {
@@ -70,7 +73,7 @@
 .typing_b88801 {
     position: relative;
     left: 0 !important;
-    margin-top: -8px;
+    margin-top: -4px;
     bottom: -4px;
     padding-left: var(--space-16);
     padding-right: var(--space-8);
