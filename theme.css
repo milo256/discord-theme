@@ -96,7 +96,7 @@
 :root {
     --custom-guild-list-width: 55px;
 }
-.expandedFolderBackground__48112 {
+.folderGroupBackground__48112 {
     left: 4px !important;
     width: calc(100% - 8px);
 }
